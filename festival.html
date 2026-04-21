@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Festivals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.style/festival.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Explore Nepal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">Culture & Tradition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="festival.html">Festivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="food.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="eyebrow">Cultural Celebration Guide</p>
+            <h1>Nepali Festivals</h1>
+            <p class="header-copy">Explore Nepal's most cherished festivals.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-card">
+            <h2>Nepali Festivals</h2>
+            <p>Nepali festivals are vibrant celebrations that showcase the country's rich cultural heritage.
+            From the grandeur of Dashain to the joy of Tihar, each festival brings communities together in tradition and festivity.
+             These celebrations are marked by unique rituals, delicious foods, and colorful attire that reflect Nepal's diverse identity.</p>
+        </section>
+
+        <section class="festival-grid">
+            <article class="festival-card card--dashain">
+                <div class="card-overlay">
+                    <span class="eyebrow">Dashain</span>
+                    <h2>Biggest Nepali festival</h2>
+                    <p>Family gatherings, blessings, and celebratory rituals for good over evil.</p>
+                    <button class="toggle-button" aria-expanded="false" aria-controls="d1" onclick="toggleText('d1', this)">Details</button>
+                </div>
+                <div class="card-details" id="d1">
+                    <p>Dashain is the most important festival in Nepal, celebrated over 15 days with worship of Goddess Durga, blessings from elders, and festive meals like sel roti and sweets.</p>
+                </div>
+            </article>
+
+            <article class="festival-card card--tihar">
+                <div class="card-overlay">
+                    <span class="eyebrow">Tihar</span>
+                    <h2>Festival of lights</h2>
+                    <p>Homes glow with lamps, music fills the streets, and prosperity is celebrated.</p>
+                    <button class="toggle-button" aria-expanded="false" aria-controls="d2" onclick="toggleText('d2', this)">Details</button>
+                </div>
+                <div class="card-details" id="d2">
+                    <p>Tihar is a five-day festival honoring animals, wealth, and relationships. Families decorate their homes, worship Laxmi, and enjoy singing, dancing, and special foods.</p>
+                </div>
+            </article>
+
+            <article class="festival-card card--holi">
+                <div class="card-overlay">
+                    <span class="eyebrow">Holi</span>
+                    <h2>Festival of colors</h2>
+                    <p>Spring arrives with vibrant powders, music, and joyful gatherings.</p>
+                    <button class="toggle-button" aria-expanded="false" aria-controls="d3" onclick="toggleText('d3', this)">Details</button>
+                </div>
+                <div class="card-details" id="d3">
+                    <p>Holi celebrates the arrival of spring and the victory of good over evil. People throw colors, dance, sing, and savor sweets as families and communities come together.</p>
+                </div>
+            </article>
+
+            <article class="festival-card card--maghi">
+                <div class="card-overlay">
+                    <span class="eyebrow">Maghi</span>
+                    <h2>Tharu community festival</h2>
+                    <p>Traditional foods, cultural dances, and community celebration.</p>
+                    <button class="toggle-button" aria-expanded="false" aria-controls="d4" onclick="toggleText('d4', this)">Details</button>
+                </div>
+                <div class="card-details" id="d4">
+                    <p>Maghi marks the Nepali New Year for the Tharu community, celebrated with special dishes, prayers, dances, and family gatherings for happiness and prosperity.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p> © Explore Nepal</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/festival.js"></script>
+
+</body>
+</html>
