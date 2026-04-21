@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+}
+
+/* IMAGE STYLE */
+.section-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT 🔥 */
+.section-img:hover {
+  transform: scale(1.05);
+}
+
+/* CENTER TEXT */
+.row {
+  text-align: center;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* PARAGRAPH SPACING */
+p {
+  line-height: 1.6;
+}
+
+/* LIST STYLE */
+ul {
+  margin-top: 15px;
+}
+
+/* FORM */
+form input {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
