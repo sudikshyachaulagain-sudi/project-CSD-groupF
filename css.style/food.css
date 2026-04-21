@@ -1,0 +1,204 @@
+:root {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1e293b;
+    background: #f7f8fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #f9fafb 0%, #eff2f7 100%);
+}
+
+.site-header {
+    background: linear-gradient(135deg, #0e0e0e 0%, #110102 100%);
+    color: #ffffff;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.header-inner {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 0.85rem;
+    letter-spacing: 0.24em;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 3.2vw, 3.6rem);
+    line-height: 1.05;
+}
+
+.header-copy {
+    margin: 1rem auto 0;
+    max-width: 760px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    background: #1f2937;
+}
+
+.nav-link {
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 999px;
+    transition: background 0.2s ease, color 0.2s ease;
+    font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background:black;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+}
+
+.intro-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.08);
+    margin-bottom: 2rem;
+}
+
+.intro-card h2 {
+    margin-top: 0;
+    font-size: 1.95rem;
+}
+
+.intro-card p {
+    color: #475569;
+    margin: 1rem 0 0;
+    max-width: 760px;
+    font-size: 1rem;
+}
+
+.food-grid {
+    display: grid;
+    gap: 1.75rem;
+}
+
+@media (min-width: 860px) {
+    .food-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.food-card {
+    position: relative;
+    min-height: 380px;
+    border-radius: 28px;
+    overflow: hidden;
+    display: grid;
+    align-items: end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
+}
+
+.food-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.72) 75%);
+}
+
+.card-overlay {
+    position: relative;
+    padding: 2rem 1.5rem 2.5rem;
+    color: #ffffff;
+    display: grid;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.card-overlay h2 {
+    margin: 0;
+    font-size: 1.85rem;
+    line-height: 1.1;
+}
+
+.card-overlay p {
+    margin: 0;
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.card-details {
+    display: none;
+    background: rgba(255, 255, 255, 0.92);
+    color: #1f2937;
+    padding: 1.5rem;
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+.toggle-button {
+    width: fit-content;
+    border: none;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1f2937;
+    padding: 0.85rem 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toggle-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.14);
+}
+
+.card--dal-bhat {
+    background-image: url('../imagess/Dal\ bhat.jpeg');
+}
+
+.card--momo {
+    background-image: url('../imagess/Momo.webp');
+}
+
+.card--selroti {
+    background-image: url('../imagess/Selroti.jpeg');
+}
+
+.card--tharu {
+    background-image: url('../imagess/Tharu cultural food.jpeg');
+}
+
+@media (max-width: 640px) {
+    .site-nav {
+        flex-direction: column;
+        gap: 0.65rem;
+    }
+    .food-card {
+        min-height: 320px;
+    }
+    .card-overlay {
+        padding: 1.5rem;
+    }
+}
