@@ -1,0 +1,122 @@
+/* GLOBAL */
+body {
+  font-family: Arial;
+  background: #f5f7fa;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+/* Button under navbar */
+.top-left-btn {
+  margin: 20px 0 0 20px;
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hidden About Nepal section */
+.about-hidden {
+  display: none;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  margin: 20px auto;     /* centers the box */
+  max-width: 800px;      /* keeps it neat */
+  animation: slideDown 0.5s ease-out;
+}
+
+/* Clear text */
+.about-hidden h2 {
+  font-weight: 900;
+  font-size: 32px;
+  color: #111;
+}
+
+.about-hidden p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #222;
+  line-height: 1.7;
+}
+
+
+/* HERO SECTION */
+.hero {
+  background: url("../images/MountEverest.jpg") center/cover no-repeat;
+  color: black;
+  padding: 120px 20px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.hero button {
+  margin-top: 15px;
+}
+
+/* HIDDEN ABOUT NEPAL BOX (blur background) */
+.about-hidden {
+  display: none;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  margin: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* TEXT INSIDE BLUR BOX */
+.about-hidden h2 {
+  font-weight: 900;
+  font-size: 32px;
+  color: #111;
+}
+
+.about-hidden p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* IMAGE STYLE (if used elsewhere) */
+.section-img {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: slideInRight 1.2s ease;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
